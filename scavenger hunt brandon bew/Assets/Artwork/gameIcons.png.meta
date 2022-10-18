@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61f66dcc7dbb2fd4bb1cf1b48b8917a4
+guid: aa2f7368052a8dc4aa3aed60174c0cf8
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -36,7 +36,7 @@ TextureImporter:
       213: 5181749999454103145
     second: gameIcons_10
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -70,7 +71,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -94,7 +95,8 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -107,7 +109,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -119,7 +121,19 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -131,7 +145,19 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -150,7 +176,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 473563ebaa0ab6170800000000000000
+      spriteID: cbf262887ad51ad4cb30edfd5ba7eb47
       internalID: 8172802603990012788
       vertices: []
       indices: 
@@ -171,7 +197,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 782318072c480c810800000000000000
+      spriteID: 5f50fe4c65b7a4e4f93a7e7dc7889db9
       internalID: 1783571423084753543
       vertices: []
       indices: 
@@ -192,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 486ded756ddc58b70800000000000000
+      spriteID: 5cd2e9eb28ee17e47a56200b1ef4bd23
       internalID: 8900746559048570500
       vertices: []
       indices: 
@@ -213,7 +239,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 752ce26c6a31bab50800000000000000
+      spriteID: 1a3422a555dfa424eb0a8cca1bde692c
       internalID: 6605394885479416407
       vertices: []
       indices: 
@@ -234,7 +260,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09e430c6c4fc0490800000000000000
+      spriteID: 9bb5b339b65a76f4c859692b77b2e4d9
       internalID: -7778573321910294260
       vertices: []
       indices: 
@@ -255,7 +281,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91ebc8fadf1d89c50800000000000000
+      spriteID: 96a51ddecc118d244a01b4b6138cb646
       internalID: 6672313735451557401
       vertices: []
       indices: 
@@ -276,7 +302,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4d03a8a2388bcb10800000000000000
+      spriteID: 12c674179a77a614ead57bed7beff9f4
       internalID: 2002844210455317834
       vertices: []
       indices: 
@@ -297,7 +323,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca43cd31cbe841fe0800000000000000
+      spriteID: e3000ce3f426bd34781c924b4a87dc75
       internalID: -1219192660672367444
       vertices: []
       indices: 
@@ -318,7 +344,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aa2e65cb661021c0800000000000000
+      spriteID: bc227cb43ebe2b6468a93afabcba0cf2
       internalID: -4530596573005075802
       vertices: []
       indices: 
@@ -339,7 +365,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 042f7020ccb1380e0800000000000000
+      spriteID: 704394bc5b45bc74fa3cd02962f75e0c
       internalID: -2268939224243244480
       vertices: []
       indices: 
@@ -360,7 +386,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 966a750ab2649e740800000000000000
+      spriteID: cad38f64fd45a2848a9398b46cf43984
       internalID: 5181749999454103145
       vertices: []
       indices: 
@@ -369,13 +395,25 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d0f600aef85a1654b81f2891ab7487a5
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gameIcons_2: 8900746559048570500
+      gameIcons_8: -4530596573005075802
+      gameIcons_4: -7778573321910294260
+      gameIcons_9: -2268939224243244480
+      gameIcons_10: 5181749999454103145
+      gameIcons_5: 6672313735451557401
+      gameIcons_3: 6605394885479416407
+      gameIcons_7: -1219192660672367444
+      gameIcons_1: 1783571423084753543
+      gameIcons_0: 8172802603990012788
+      gameIcons_6: 2002844210455317834
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
