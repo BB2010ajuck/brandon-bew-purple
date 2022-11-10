@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    [Header("Default speed")]
     public float speed;
 
     // Start is called before the first frame update
