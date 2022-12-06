@@ -26,6 +26,6 @@ public class PlayerControls : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject.Find("GameController").GetComponent<GameController>().GameOver();
+        GameObject.Find("Spawner").GetComponent<GameController>().GameOver();
     }
 }
