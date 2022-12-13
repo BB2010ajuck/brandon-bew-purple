@@ -22,4 +22,59 @@ public class PlayerControls : MonoBehaviour
     {
 
     }
+
+    void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+            rb.AddForce(Vector3.up * (jumpPower * rb.mass * rb.gravityScale * 20.0f));
+        }
+        if (transform.position.x < posX)
+        {
+            GameOver();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+        if (collision.collider.tag == "Enemy")
+        {
+            GameOver();
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Ground")
+        {
+            isGrounded = false;
+        }
+    }
+
+    void GameOver()
+    {
+        Time.timeScale = 0;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+       if (collision.tag == "Coin")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
+
 }
