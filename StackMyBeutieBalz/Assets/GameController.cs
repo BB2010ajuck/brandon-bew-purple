@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     public GameObject lastCube;
     [Header("Text Object")]
     public Text text;
+    [Header("Text Object")]
+    public Text  finalText;
     [Header("Current Level")]
     public int Level;
     [Header("Boolean")]
@@ -20,6 +22,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         NewBlock();
+        
     }
 
     // Update is called once per frame
@@ -44,6 +47,7 @@ public class GameController : MonoBehaviour
         {
             NewBlock();
         }
+        text.text = "Score: " + Level;
     }
     IEnumerator X()
     {
@@ -64,8 +68,9 @@ public class GameController : MonoBehaviour
             if (currentCube.transform.localScale.x <= 0f || currentCube.transform.localScale.z <= 0f)
             {
                 Done = true;
-                text.gameObject.SetActive(true);
-                text.text = "Final Score: " + Level;
+                finalText.gameObject.SetActive(true);
+                text.gameObject.SetActive(false);
+                finalText.text = "Final Score: " + Level;
                 StartCoroutine(X());
                 return;
             }
