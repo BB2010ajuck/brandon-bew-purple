@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
-    {
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private Spawner spawner;
     public GameObject title;
@@ -42,11 +36,13 @@ public class GameManager : MonoBehaviour
             {
                 ResetGame();
             }
-        } else
+        }
+        else
         {
             if (!player)
             {
                 OnPlayerKilled();
+                Debug.Log("kill");
             }
         }
 
@@ -76,7 +72,7 @@ public class GameManager : MonoBehaviour
         gameStarted = true;
     }
 
-    void OnPlayerKilled()
+    public void OnPlayerKilled()
     {
         spawner.active = false;
         gameStarted = false;
